@@ -3,401 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
+    <title>Portfolio Website</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-            </head>
-        <body>
-        <header>
-            <div class="flex justify-center gap-36 md:gap-40 md:mx-8 md:my-8">
+    <style>
+        /* Custom styles for better responsiveness (optional, but good practice) */
+        .container-padding {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (min-width: 768px) {
+            .container-padding {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans">
 
-            <div class="ml-2 mr-2 h-auto w-auto md:h-10 md:w-36 mt-3 " >
-                <img src="/img/Logo.png" alt="">
+    <header class="shadow-md">
+        <div class="container-padding flex justify-between items-center py-4 md:py-8">
+
+            <div class="h-8 md:h-10 w-auto">
+                <img src="/img/Logo.png" alt="Logo">
             </div>
 
-            <div>
-                <ul class=" hidden md:px-40 py-4  md:flex gap-10">
-                    <li >
-                        <a href="">Home</a>
-                    </li>
-                     <li>
-                        <a href="">Portfolio</a>
-                    </li>
-                     <li >
-                        <a href="">About me</a>
-                    </li>
-                     <li>
-                        <a href="">Testimonials</a>
-                    </li>
+            <nav class="hidden md:flex">
+                <ul class="flex gap-6 lg:gap-10 font-medium">
+                    <li><a href="#" class="hover:text-orange-600">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-600">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-orange-600">About me</a></li>
+                    <li><a href="#" class="hover:text-orange-600">Testimonials</a></li>
                 </ul>
-            </div>
+            </nav>
 
             <div>
-                    <button class=" md:h-14 px-3 py-1 md:w-28 md:max-h-md:px-10 md:py-3 bg-[#94dbe0] rounded-tl-xl rounded-br-xl ">Contact ME</button>
+                <button class="px-4 py-2 text-sm md:text-base bg-[#94dbe0] rounded-tl-xl rounded-br-xl hover:bg-opacity-80 transition duration-300">
+                    Contact ME
+                </button>
             </div>
-   </header>
+        </div>
+    </header>
 
-   <!-- text div -->
+    <main>
+    <div class="container-padding md:flex items-center justify-between pt-10 pb-16 md:pt-20 md:pb-32">
 
-    <div class=" col-span-1 md:flex justify-between px-8  ">
-
-             <p class="md:mt-20 md:absolute md:px-16 font-semibold">Hey,I'm Jhn</p>
-          <div >
-            <h1  class="mt-28 px-12 text-3xl md:text-7xl font-bold leading-tight">I create <span class="text-orange-600">product design</span> and brand experience</h1>
-            <p class=" mt-4 px-12 leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse varius enim in eros elementum tristique.</p>
-             <button class=" ml-44 mb-4 md:px-4 py-2 md:ml-12 mt-16 bg-[#94dbe0] rounded-tl-xl rounded-br-xl ">Get In Tuch</button>
+        <div class="md:w-1/2">
+            <p class="font-semibold text-lg md:text-xl">Hey, I'm Jhn</p>
+            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
+                I create <span class="text-orange-600">product design</span> and brand experience
+            </h1>
+            <p class="mt-4 max-w-lg leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <button class="mt-8 px-6 py-3 bg-[#94dbe0] rounded-tl-xl rounded-br-xl hover:bg-opacity-80 transition duration-300">
+                Get In Touch
+            </button>
         </div>
 
-         <!-- img div -->
-
-        <div >
-            <img  src="/img/Group 11 1.png" alt="">
+        <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+            <img class="max-w-full h-auto" src="/img/Group 11 1.png" alt="Designer Avatar">
         </div>
 
-          >
-        </div>
+    </div>
     
+    <section class="container-padding py-16 md:py-24">
+        <div>
+            <p class="font-semibold text-orange-600">My Skills</p>
+            <h2 class="text-4xl sm:text-5xl font-bold mt-2">My Expe<span class="text-orange-600">r</span>tise</h2>
+        </div>
+    </section>
 
-        <!-- skill section -->
-        
-        <section>
-
-            <div class="ml-12 mt-36 px-4 ">
-
-            <p class="leading-relaxed  font-semibold">My Skills</p>
-            <h1 class="text-6xl font-bold">My Expe<span class="text-orange-600">r</span>tise</h1>
-                
-            </div>
-
-        </section>
-
-        <!-- Skills Details -->
-        <section>
-
-            <div class="col-span-1 ml-12 mt-36 mr-12 px-4 md:flex justify-between gap-8 h-80 w-[405]">
-
-                <div class="bg-[#F5FCFF] px-7 py-8 rounded-xl" >
-                        <img src="/img/product-chain 1.png " alt="">
-                        <h3 class="text-2xl font-bold mt-4">Strategy & Direction</h3>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br> Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-
-                <div class="bg-[#F5FCFF] px-7 py-8 rounded-xl">
-                    <img src="/img/tag 1.png" alt="">
-                    <h3 class="text-2xl font-bold mt-4 leading-loose">Branding & Logo</h3>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br> Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-
-                <div class="bg-[#F5FCFF] px-7 py-8 rounded-xl">
-                    <img src="/img/feather-pen 1.png" alt="">
-                    <h3 class="text-2xl font-bold mt-4 leading-loose">UI & UX Design</h3>
-                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-
-                <div class="bg-[#F5FCFF] px-7 py-8 rounded-xl">
-                     <img src="/img/tag(1).png" alt="">
-                    <h3 class="text-2xl font-bold mt-4 leading-loose">Webflow Development</h3>
-                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-        
-            </div>
-
-        </section>
-        <!-- about me -->
-        <section>
-
-           <div class="col-span-1 md:flex justify-between ml-12 md:mt-36 md:gap-x-60 px-8">
-             <div>
-                <img src="/img/About Me.png" alt="">
-            </div>
-
-            <div class="md:mt-36 md:px-10">
-                <p class="font-medium leading-tight">About</p>
-                <h1 class="text-3xl font-bold mt-4 leading-loose">Ab<span class="text-orange-600">o</span>ut Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius  faucibus massa sollicitudin amet augue. Nibh metus a semper purus mauris  duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque. <br><br>
-
-              sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. <br> Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
-            </div>
-           </div>
-
-        </section>
-
-        <section>
-
-           <div class="md:flex justify-between ml-12 mt-30 mr-12 px-14 py-8">
-
-             <div>
-                <p class="font-semibold">Recent Projects</p>
-                <h1 class="text-3xl font-bold">My Port<span class="text-orange-600">f</span>olio</h1>
-            </div>
-             
-            <div>
-                <button class="flex items-center px-4 py-2 mt-3 bg-[#94dbe0] rounded-tl-xl rounded-br-xl">
-               <img class="h-4 w-4 mr-2" src="/img/Social icon.png" alt=""> Visit Me
-               </button>
-
-            </div>
-
-           </div>
-
-        </section>
-
-        <!-- my portfolio -->
-      
-        <section>
-
-              <div class=" col-span-1 md:flex justify-between gap-16 ml-12 mr-12 px-10 py-8">
-
-                <div class="px-6 py-6 rounded-xl shadow-xl">
-                    <img src="/img/Image 2.png" alt="">
-                    <h3 class="text-2xl font-bold mt-4">Ahuse</h3> <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                    <p class=" md:flex items-center px-4 py-2 mt-3 gap-2 ">View In Dribbble <img class="h-4 w-4 mr-2" src="/img/Vector.png" alt="" ></p> <hr>
-                </div>
-
-                <div class="px-6 py-6 rounded-xl shadow-xl">
-                    <img src="/img/Image 1.png" alt="">
-                    <h3 class="text-2xl font-bold mt-4">App Dashboard</h3> <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                     <p class="flex items-center px-4 py-2 mt-3 gap-2">View In Dribbble <img class="h-4 w-4 mr-2" src="/img/Vector.png" alt=""></p> <hr>
-                </div>
-
-                <div class="px-6 py-6 rounded-xl shadow-xl">
-                    <img src="/img/Image.png" alt="">
-                    <h3 class="text-2xl font-bold mt-4">Easy Rent</h3> <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                    <p class="flex items-center px-4 py-2 mt-3 gap-2">View In Dribbble <img class="h-4 w-4 mr-2" src="/img/Vector.png" alt=""></p> <hr>
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <!-- clients feedback -->
-        <section>
-
-            <div class="ml-12 mr-12 px-10 py-8">
-
-              <div>
-
-                 <p class="font-semibold">Clients Feedback</p>
-                <h1 class="text-3xl font-bold">Customer testimonials</h1>
-               </div>
-             </div>
-
-        </section>
-
-        <section>
-
-             <div class="md:flex justify-between gap-14 ml-12 mr-12 px-10 py-8 bg-[#F5FCFF]" >
-
-                <div class="border-2 rounded-sm">
-                    <div class="flex px-6 py-2 mt-2" >
-                    <img class="h-4 w-4 mr-2" src="/img/star.png" alt="">
-                    <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                    <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                    <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                    <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                    </div>
-                    <p class="px-8 py-4">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra. 
-                    </p>
-
-                     <div class="flex ">
-
-                        <div class="px-4 py-4 h-20 w-20 ml-4 ">
-                            <img src="/img/Avatar Image.png" alt="">
-                        </div>
-
-                        <div class="px-2 py-4 ">
-                            <h5 class="font-semibold text-base">Dianne Russell</h5>
-                            <p>Starbucks</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="border-2 rounded-sm ">
-                    <div class="flex px-6 py-2 mt-2">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                    </div>
-
-                       <p class="px-8 py-4">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra. 
-                    </p>
-
-                     <div class="flex ">
-
-                        <div class="px-4 py-4 h-20 w-20 ml-4 ">
-                            <img src="/img/Avatar Image (1).png" alt="">
-                        </div>
-
-                        <div class="px-2 py-4 ">
-                            <h5 class="font-semibold text-base">Kristin Watson</h5>
-                            <p>Louis Vuitton</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="border-2 rounded-sm">
-                     <div class="flex px-6 py-2 mt-2">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                      <img class="h-4 w-4 mr-2"  src="/img/star.png" alt="">
-                     </div>
-                       <p class="px-8 py-4">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse varius enim in eros elementum tristique.Duis cursus, mi quis viverra. 
-                    </p>
-
-                 <div class="md:flex ">
-
-                        <div class="px-4 py-4 h-20 w-20 ml-4 ">
-                            <img src="/img/Avatar Image (2).png" alt="">
-                        </div>
-
-                        <div class="px-2 py-4 ">
-                            <h5 class="font-semibold text-base">Kathryn Murphy</h5>
-                            <p>McDonald's</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- forom -->
-
-        <section>
-
-            <div class="justify-items-center gap-14 ml-12 mr-12 px-10 py-8">
+    <section class="container-padding pb-16 md:pb-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             
-                   <p class="font-medium leading-10">Get in Tuch</p>
-                   <h1 class="text-3xl font-bold">Contact me</h1><br>
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            
+            <div class="bg-[#F5FCFF] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                <img class="h-10 w-10" src="/img/product-chain 1.png" alt="Strategy Icon">
+                <h3 class="text-xl font-bold mt-4">Strategy & Direction</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
             </div>
 
-        </section>
+            <div class="bg-[#F5FCFF] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                <img class="h-10 w-10" src="/img/tag 1.png" alt="Branding Icon">
+                <h3 class="text-xl font-bold mt-4">Branding & Logo</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
 
-        <section>
+            <div class="bg-[#F5FCFF] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                <img class="h-10 w-10" src="/img/feather-pen 1.png" alt="UI/UX Icon">
+                <h3 class="text-xl font-bold mt-4">UI & UX Design</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
 
-           <div class="flex justify-center gap-8 ml-12 mr-12 px-10 py-8">
-             <div class="rounded-sm" >
-                 <p>First name</p>
-                 <input class="border-2 rounded-sm bg-[#FFFFFF]" type="text" name="First Name"id="" placeholder="First name">
-
-                  <p>Email</p>
-                 <input class="border-2 rounded-sm bg-[#FFFFFF]" type="text" name="First Name"id="" placeholder="Email">
-              </div>
+            <div class="bg-[#F5FCFF] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                 <img class="h-10 w-10" src="/img/tag(1).png" alt="Webflow Icon">
+                <h3 class="text-xl font-bold mt-4">Webflow Development</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <footer class="bg-gray-900 text-white">
+        <div class="container-padding py-12 md:py-20">
+            
+            <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-5 md:gap-4 lg:gap-8 border-b border-gray-700 pb-10 mb-8">
                 
-                    <div>
-                        <p>Last name</p>
-                        <input class="border-2 rounded-sm bg-[#FFFFFF]" type="email" placeholder="Last name">
-
-                         <p>Phone number</p>
-                        <input class="border-2 rounded-sm bg-[#FFFFFF]" type="number" placeholder=" Phone number">
-
-
-                    </div>
-                     
-           </div>
-
-        </section>
-                    <div class="md:justify-center ml-[559px]">
-                        <p>Choose file</p>
-                        <input class=" w-[400px] border-2 rounded-sm bg-[#FFFFFF]" type="file">
-                    </div> <br> 
-
-                        <div class="md:justify-center ml-[559px]">
-                            <p>Type your massege</p>
-                            <input class="md:w-[400px] md:h-[60px] border-2 rounded-sm bg-[#FFFFFF]" type="text" placeholder="Type your massege"> <br> <br>
-
+                <div class="col-span-2 sm:col-span-1">
+                    <div class="h-10 w-auto mb-4">
+                        <img src="/img/Logo.png" alt="Logo" class="h-full w-auto filter grayscale invert"> 
                         </div>
+                    <p class="text-gray-400 text-sm mt-4 max-w-xs">
+                        Designing products that bring smiles. Contact me for a collaboration.
+                    </p>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-semibold mb-4 text-orange-400">Services</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-orange-600 transition">UI/UX Design</a></li>
+                        <li><a href="#" class="hover:text-orange-600 transition">Webflow Dev</a></li>
+                        <li><a href="#" class="hover:text-orange-600 transition">Branding</a></li>
+                        <li><a href="#" class="hover:text-orange-600 transition">Consultation</a></li>
+                    </ul>
+                </div>
 
+                <div>
+                    <h5 class="text-lg font-semibold mb-4 text-orange-400">Quick Links</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-orange-600 transition">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-orange-600 transition">About Me</a></li>
+                        <li><a href="#" class="hover:text-orange-600 transition">Testimonials</a></li>
+                        <li><a href="#" class="hover:text-orange-600 transition">FAQ</a></li>
+                    </ul>
+                </div>
 
-                        <div class="md:flex justify-center mr-[246px] gap-2">
-                           <div>
-                             <input type="checkbox">
-                           </div>
-                            <p>I accpet the terms</p>
-
-                        </div> <br> 
-
-                        <button class="md:justify-center ml-[720px] bg-[#94dbe0] rounded-sm px-6 py-3">Submit</button> <br> <br>
-
-
-                        <footer>
-
-                            <div class="flex justify-between bg-[#e4f3fa]">
-                                <div class="h-30 w-36 mt-20 ml-12 mr-12">
-                                    <img src="/img/Logo.png" alt="">
-                                </div>
-
-                                <div>
-                                    <ul class="px-40 py-4 md:flex gap-10 mt-18">
-                                        <li>
-                                            Home
-                                        </li>
-                                        <li>
-                                           Portfolio
-                                        </li>
-                                        <li>
-                                            About me 
-                                        </li>
-                                        <li>
-                                           Contact
-                                        </li>
-                                        <li>
-                                           Testimonials
-                                        </li>
-                                     </ul>
-
-                                </div>
-
-                                <div class="md:flex gap-8 px-5 mt-20">
-                                    <img  class=" h-auto w-auto md:h-6 md:w-6" src="/img/Facebook.png" alt="">
-                                    <img  class="h-6 w-6"  src="/img/Instagram.png" alt="">
-                                    <img  class="h-6 w-6"  src="/img/Twitter.png" alt="">
-                                    <img  class="h-6 w-6"  src="/img/LinkedIn.png" alt="">
-                                </div>
-
-                            </div> <hr>
-
-                            <section>
-                                 <div class="col-span-1 md:flex justify-between bg-[#e4f3fa] py-16">
-                                    <div class="px-12">
-                                        <p>Made by Tasmim Anu</p>
-                                    </div>
-                                    <div>
-                                       <ul class="flex gap-8 px-12">
-                                        <li>
-                                            Privacy Policy
-                                        </li>
-                                        <li>
-                                          Terms of Service
-                                        </li>
-                                        <li>
-                                            Cookies Settings
-                                        </li>
-                                          
-                                       </ul>
-                                    </div>
-                                </div>
-                            </section>
-
-                        </footer>
-       
-</body>
+                <div class="col-span-2 sm:col-span-1 md:col-span-1">
+                    <h5 class="text-lg font-semibold mb-4 text-orange-400">Social Media</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-orange-600 transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017C2 17.07 5.753 21.368 10.741 22V14.004H8.384V11.006H10.741V8.752C10.741 6.444 12.164 5.2 14.195 5.2C15.132 5.2 16.142 5.378 16.142 5.378V7.807H14.996C13.844 7.807 13.486 8.356 13.486 9.043V11.006H16.035L15.626 14.004H13.486V22C18.293 21.36 22 17.062 22 12.017C22 6.484 17.523 2 12 2Z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-orange-600 transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.254 5.603c-.63.28-1.3.469-2.008.552a4.053 4.053 0 001.76-1.921 7.89 7.89 0 01-2.235.845 3.966 3.966 0 00-6.762 3.61c-3.325-.167-6.275-1.748-8.246-4.148a3.969 3.969 0 001.226 5.28c-.576-.018-1.12-.178-1.597-.442a3.965 3.965 0 003.179 3.89 3.993 3.993 0 01-1.792.068 3.968 3.968 0 003.702 2.75 7.97 7.97 0 01-4.945 1.708c-.322 0-.64-.019-.955-.056a11.168 11.168 0 006.014 1.764c7.218 0 11.169-5.978 11.169-11.169 0-.17-.004-.338-.013-.506a7.97 7.97 0 001.967-2.049z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-orange-600 transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c2.757 0 3.107.01 4.19.06A7.87 7.87 0 0119.5 4.5c.988.988 1.83 2.158 2.44 3.475.05.77.06 1.12.06 4.19s-.01 3.42-.06 4.19a7.87 7.87 0 01-2.44 3.475c-.988.988-2.158 1.83-3.475 2.44-.77.05-1.12.06-4.19.06s-3.42-.01-4.19-.06a7.87 7.87 0 01-3.475-2.44c-.988-.988-1.83-2.158-2.44-3.475-.05-.77-.06-1.12-.06-4.19s.01-3.42.06-4.19a7.87 7.87 0 012.44-3.475c.988-.988 2.158-1.83 3.475-2.44C8.58 2.07 8.93 2.06 12 2zm0 2.2a7.808 7.808 0 00-5.757 2.243A7.808 7.808 0 004.2 12c0 2.15.54 4.133 1.554 5.863.63 1.096 1.487 1.954 2.583 2.583C9.867 19.46 11.85 20 12 20s2.133-.54 3.863-1.554c1.096-.63 1.954-1.487 2.583-2.583C19.46 14.133 20 12.15 20 12s-.54-2.133-1.554-3.863a7.808 7.808 0 00-2.583-2.583A7.808 7.808 0 0012 4.2zm0 3.8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 2.2a1.8 1.8 0 110 3.6 1.8 1.8 0 010-3.6zm6.2-5.4a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p class="mb-4 md:mb-0">&copy; 2024 Your Portfolio. All Rights Reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-orange-600 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-orange-600 transition">Terms of Service</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    </body>
 </html>
